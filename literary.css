@@ -1,0 +1,143 @@
+
+
+#tab {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(250, 250, 253, 0.5);
+    backdrop-filter: blur(50px) saturate(2.1);
+    display: flex;
+    flex-direction: row;
+    padding: 10pt 50pt;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#home {
+    position: fixed;
+    top: 10pt;
+    left: 10pt;
+    right: 0;
+    z-index: 2;
+    font-size: 12pt;
+    width:fit-content;
+    text-transform: capitalize;
+    background-color: rgba(250, 250, 253, 0.8);
+    backdrop-filter: blur(10pt) saturate(2.1);
+    font-weight: normal;
+    padding: 5pt 10pt;
+    border-radius: 5pt;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+#links {
+    display: flex;
+    flex-direction: row;
+    /* align-self: end; */
+    gap: 50pt;
+}
+
+#links p {
+    opacity: 50%;
+}
+
+#wrapper {
+    background-color: #0F1923;
+    height: 100vh;
+    width: 100vw;
+    /* overflow-y: hidden; */
+    overflow-x: hidden;
+    perspective: 100pt;
+    scroll-behavior: smooth;
+}
+
+#parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+}
+
+#layer1, #layer2, #layer3, #layer4, #layer5, #layer6, #layer7, #layer8, #layer9, #layer10, #layer11, #layer111, #layer12 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#layer1 {
+    transform: translateZ(-100pt) scale(2.1); /*adjust*/
+}
+
+#layer2 {
+    transform: translateZ(-100pt) scale(2.1); /*adjust*/
+}
+
+#layer3 {
+    transform: translateZ(-98pt) scale(calc(1 + 98/99)); /*adjust*/
+}
+
+#layer4{
+    transform: translateZ(-70pt) scale(calc(1 + 70/99)); /*adjust*/
+}
+
+#layer5{
+    transform: translateZ(-60pt) scale(calc(1 + 60/99)); /*adjust*/
+}
+#layer6 {
+    transform: translateZ(-50pt) scale(calc(1 + 50/99)); /*adjust*/
+}
+
+#layer7 {
+    transform: translateZ(-30pt) scale(calc(1 + 30/99)); /*adjust*/
+}
+
+#layer8 {
+    transform: translateZ(-20pt) scale(calc(1 + 20/99)); /*adjust*/
+}
+
+#layer9 {
+    transform: translateZ(-10pt) scale(calc(1 + 10/99)); /*adjust*/
+}
+
+#layer10 {
+    transform: translateZ(-0pt) scale(1); /*adjust*/
+}
+
+#layer111 {
+    transform: translateZ(0pt) scale(1); /*adjust*/
+}
+
+#layer11 {
+    transform: translateZ(0pt) scale(1); /*adjust*/
+}
+
+#layer12 {
+    transform: translateZ(1pt) scale(2); /*adjust*/
+}
+
+
+#title {
+    font-family: "Inter", sans-serif;
+    color: white;
+    font-size: 150pt;
+    z-index: 0;
+    position: relative;
+    transform: translate(0%, -100%) translateZ(-40pt) scale(1);
+    z-index: -1;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+section {
+    background-color: #92c3ca;
+    padding: 30pt 100pt;
+}
